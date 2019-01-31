@@ -1,0 +1,273 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 380
+  Width = 427
+  object SQLConnection: TSQLConnection
+    DriverName = 'DataSnap'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=Data.DBXDataSnap'
+      'HostName=localhost'
+      'Port=211'
+      'CommunicationProtocol=tcp/ip'
+      'DatasnapContext=datasnap/'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXClientDriverLoader,Borland' +
+        '.Data.DbxClientDriver,Version=24.0.0.0,Culture=neutral,PublicKey' +
+        'Token=91d62ebb5b0d1b1b'
+      'Filters={}')
+    Left = 56
+    Top = 17
+    UniqueId = '{B89183C6-8E17-406D-A8BC-FDE81D83B7D2}'
+  end
+  object ConnectionSuiteServer: TDSProviderConnection
+    ServerClassName = 'TServerMethods1'
+    SQLConnection = SQLConnection
+    Left = 160
+    Top = 17
+  end
+  object DAlmacen: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProviderAlmacen'
+    RemoteServer = ConnectionSuiteServer
+    Left = 192
+    Top = 80
+    object DAlmacenIdAlmacen: TStringField
+      FieldName = 'IdAlmacen'
+      Origin = 'IdAlmacen'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 15
+    end
+    object DAlmacenNombre: TStringField
+      FieldName = 'Nombre'
+      Origin = 'Nombre'
+      Size = 50
+    end
+    object DAlmacenEmpresa: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Empresa'
+      LookupDataSet = DEmpresa
+      LookupKeyFields = 'IdEmpresa'
+      LookupResultField = 'Nombre'
+      KeyFields = 'IdEmpresa'
+      Lookup = True
+    end
+    object DAlmacenIdEmpresa: TStringField
+      FieldName = 'IdEmpresa'
+      Origin = 'IdEmpresa'
+      Size = 15
+    end
+    object DAlmacenSucursal: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Sucursal'
+      LookupDataSet = DSucursal
+      LookupKeyFields = 'IdSucursal'
+      LookupResultField = 'Descripcion'
+      KeyFields = 'IdSucursal'
+      Lookup = True
+    end
+    object DAlmacenIdSucursal: TStringField
+      FieldName = 'IdSucursal'
+      Origin = 'IdSucursal'
+      Size = 15
+    end
+    object DAlmacenIdCuenta: TStringField
+      FieldName = 'IdCuenta'
+      Origin = 'IdCuenta'
+      Size = 15
+    end
+    object DAlmacenIdCuentaDif: TStringField
+      FieldName = 'IdCuentaDif'
+      Origin = 'IdCuentaDif'
+      Size = 15
+    end
+    object DAlmacenDireccion: TStringField
+      FieldName = 'Direccion'
+      Origin = 'Direccion'
+      Size = 50
+    end
+    object DAlmacenTelefono: TStringField
+      FieldName = 'Telefono'
+      Origin = 'Telefono'
+      Size = 30
+    end
+    object DAlmacenContacto: TStringField
+      FieldName = 'Contacto'
+      Origin = 'Contacto'
+      Size = 50
+    end
+  end
+  object SAlmacen: TDataSource
+    DataSet = DAlmacen
+    Left = 192
+    Top = 152
+  end
+  object DEmpresa: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProviderEmpresa'
+    RemoteServer = ConnectionSuiteServer
+    Left = 36
+    Top = 80
+    object DEmpresaIdEmpresa: TStringField
+      FieldName = 'IdEmpresa'
+      Origin = 'IdEmpresa'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 15
+    end
+    object DEmpresaNombre: TStringField
+      FieldName = 'Nombre'
+      Origin = 'Nombre'
+      Size = 50
+    end
+    object DEmpresaNit: TStringField
+      FieldName = 'Nit'
+      Origin = 'Nit'
+      Size = 15
+    end
+    object DEmpresaDireccion: TStringField
+      FieldName = 'Direccion'
+      Origin = 'Direccion'
+      Size = 50
+    end
+    object DEmpresaTelefono: TStringField
+      FieldName = 'Telefono'
+      Origin = 'Telefono'
+      Size = 30
+    end
+    object DEmpresawww: TStringField
+      FieldName = 'www'
+      Origin = 'www'
+      Size = 30
+    end
+    object DEmpresaEmail: TStringField
+      FieldName = 'Email'
+      Origin = 'Email'
+      Size = 50
+    end
+    object DEmpresaCaja: TFloatField
+      FieldName = 'Caja'
+      Origin = 'Caja'
+    end
+    object DEmpresaLogo: TBlobField
+      FieldName = 'Logo'
+      Origin = 'Logo'
+    end
+  end
+  object SEmpresa: TDataSource
+    DataSet = DEmpresa
+    Left = 36
+    Top = 152
+  end
+  object DSucursal: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProviderSucursal'
+    RemoteServer = ConnectionSuiteServer
+    Left = 88
+    Top = 80
+    object DSucursalIdSucursal: TStringField
+      FieldName = 'IdSucursal'
+      Origin = 'IdSucursal'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 15
+    end
+    object DSucursalDescripcion: TStringField
+      FieldName = 'Descripcion'
+      Origin = 'Descripcion'
+      Size = 30
+    end
+  end
+  object DCuenta: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProviderCuenta'
+    RemoteServer = ConnectionSuiteServer
+    Left = 136
+    Top = 80
+    object DCuentaIdCuenta: TStringField
+      FieldName = 'IdCuenta'
+      Origin = 'IdCuenta'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 15
+    end
+    object DCuentaIdGrupo: TStringField
+      FieldName = 'IdGrupo'
+      Origin = 'IdGrupo'
+      Size = 15
+    end
+    object DCuentaIdTipoCuenta: TStringField
+      FieldName = 'IdTipoCuenta'
+      Origin = 'IdTipoCuenta'
+      Size = 15
+    end
+    object DCuentaIdMoneda: TStringField
+      FieldName = 'IdMoneda'
+      Origin = 'IdMoneda'
+      Size = 15
+    end
+    object DCuentaPreCuenta: TStringField
+      FieldName = 'PreCuenta'
+      Origin = 'PreCuenta'
+      Size = 15
+    end
+    object DCuentaDescripcion: TStringField
+      FieldName = 'Descripcion'
+      Origin = 'Descripcion'
+      Size = 50
+    end
+    object DCuentaNivel: TSmallintField
+      FieldName = 'Nivel'
+      Origin = 'Nivel'
+    end
+    object DCuentaConsolida: TIntegerField
+      FieldName = 'Consolida'
+      Origin = 'Consolida'
+    end
+    object DCuentaPresupuesto: TSmallintField
+      FieldName = 'Presupuesto'
+      Origin = 'Presupuesto'
+    end
+    object DCuentaMoneda: TStringField
+      FieldName = 'Moneda'
+      Origin = 'Moneda'
+      Size = 15
+    end
+    object DCuentaSaldoML: TFloatField
+      FieldName = 'SaldoML'
+      Origin = 'SaldoML'
+    end
+    object DCuentaSaldoME: TFloatField
+      FieldName = 'SaldoME'
+      Origin = 'SaldoME'
+    end
+    object DCuentaEstado: TSmallintField
+      FieldName = 'Estado'
+      Origin = 'Estado'
+    end
+    object DCuentaIdUsuario: TStringField
+      FieldName = 'IdUsuario'
+      Origin = 'IdUsuario'
+      Size = 15
+    end
+    object DCuentaIdFecha: TDateTimeField
+      FieldName = 'IdFecha'
+      Origin = 'IdFecha'
+    end
+  end
+  object SSucursal: TDataSource
+    DataSet = DSucursal
+    Left = 88
+    Top = 152
+  end
+  object SCuenta: TDataSource
+    DataSet = DCuenta
+    Left = 136
+    Top = 152
+  end
+end

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2019/01/31 04:24:55.000,=C:\Users\Romeo\Desktop\ProyectoSuite\Servidor\Unit1.pas</Transaction>
+    <Transaction>2019/01/31 04:24:56.332,=C:\Users\Romeo\Desktop\ProyectoSuite\Servidor\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2019/01/31 04:24:57.693,=C:\Users\Romeo\Desktop\ProyectoSuite\Servidor\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2019/01/31 04:25:13.582,C:\Users\Romeo\Desktop\ProyectoSuite\Servidor\Principal.dfm=C:\Users\Romeo\Desktop\ProyectoSuite\Servidor\Unit1.dfm</Transaction>
+    <Transaction>2019/01/31 04:25:13.582,C:\Users\Romeo\Desktop\ProyectoSuite\Servidor\Principal.pas=C:\Users\Romeo\Desktop\ProyectoSuite\Servidor\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,73 @@
+unit ModuloDato;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DBXDataSnap, Data.DBXCommon,
+  IPPeerClient, Data.DB, Datasnap.DBClient, Datasnap.DSConnect, Data.SqlExpr;
+
+type
+  TDataModule1 = class(TDataModule)
+    SQLConnection: TSQLConnection;
+    ConnectionSuiteServer: TDSProviderConnection;
+    DAlmacen: TClientDataSet;
+    DAlmacenIdAlmacen: TStringField;
+    DAlmacenNombre: TStringField;
+    DAlmacenEmpresa: TStringField;
+    DAlmacenIdEmpresa: TStringField;
+    DAlmacenSucursal: TStringField;
+    DAlmacenIdSucursal: TStringField;
+    DAlmacenIdCuenta: TStringField;
+    DAlmacenIdCuentaDif: TStringField;
+    DAlmacenDireccion: TStringField;
+    DAlmacenTelefono: TStringField;
+    DAlmacenContacto: TStringField;
+    SAlmacen: TDataSource;
+    DEmpresa: TClientDataSet;
+    DEmpresaIdEmpresa: TStringField;
+    DEmpresaNombre: TStringField;
+    DEmpresaNit: TStringField;
+    DEmpresaDireccion: TStringField;
+    DEmpresaTelefono: TStringField;
+    DEmpresawww: TStringField;
+    DEmpresaEmail: TStringField;
+    DEmpresaCaja: TFloatField;
+    DEmpresaLogo: TBlobField;
+    SEmpresa: TDataSource;
+    DSucursal: TClientDataSet;
+    DSucursalIdSucursal: TStringField;
+    DSucursalDescripcion: TStringField;
+    DCuenta: TClientDataSet;
+    DCuentaIdCuenta: TStringField;
+    DCuentaIdGrupo: TStringField;
+    DCuentaIdTipoCuenta: TStringField;
+    DCuentaIdMoneda: TStringField;
+    DCuentaPreCuenta: TStringField;
+    DCuentaDescripcion: TStringField;
+    DCuentaNivel: TSmallintField;
+    DCuentaConsolida: TIntegerField;
+    DCuentaPresupuesto: TSmallintField;
+    DCuentaMoneda: TStringField;
+    DCuentaSaldoML: TFloatField;
+    DCuentaSaldoME: TFloatField;
+    DCuentaEstado: TSmallintField;
+    DCuentaIdUsuario: TStringField;
+    DCuentaIdFecha: TDateTimeField;
+    SSucursal: TDataSource;
+    SCuenta: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

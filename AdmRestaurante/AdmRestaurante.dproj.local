@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/01/24 00:30:04.000.065,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/01/30 23:03:00.000.728,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2019/01/30 23:03:00.000.610,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2019/01/30 23:03:00.000.460,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/01/31 01:03:13.000.958,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/01/31 01:03:14.000.241,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2019/01/31 01:03:14.000.124,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2019/01/31 03:50:11.000.271,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2019/01/31 03:50:11.000.043,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/01/31 03:50:11.000.165,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2019/01/31 04:23:48.000.901,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/01/31 04:26:03.368,=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019/01/31 04:26:39.520,C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\Principal.dfm=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2019/01/31 04:26:39.520,C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\Principal.pas=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019/01/31 04:26:54.991,C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\AdmRestaurante.dproj=C:\Users\Romeo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/01/31 04:27:47.481,=C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\Unit1.pas</Transaction>
+    <Transaction>2019/01/31 04:31:57.276,C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\ModuloDato.dfm=C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\Unit1.dfm</Transaction>
+    <Transaction>2019/01/31 04:31:57.276,C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\ModuloDato.pas=C:\Users\Romeo\Desktop\ProyectoSuite\AdmRestaurante\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
